@@ -8,83 +8,79 @@
 
     <EditText
         android:id="@+id/NomeId"
-        android:layout_width="170dp"
+        android:layout_width="0dp"
         android:layout_height="43dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/nome"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/NumeroId"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/NumeroId"
-        android:layout_width="165dp"
+        android:layout_width="0dp"
         android:layout_height="46dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/numero_telefone"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/NomeId"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NomeId" />
 
     <EditText
         android:id="@+id/DataId"
-        android:layout_width="171dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="224dp"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/data_nascimento"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NomeId" />
+        app:layout_constraintTop_toBottomOf="@+id/NumeroId" />
 
     <ListView
         android:id="@+id/Lista"
         android:layout_width="395dp"
         android:layout_height="381dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DataId" />
+        app:layout_constraintTop_toBottomOf="@+id/Editar" />
 
     <Button
         android:id="@+id/Salvar"
-        android:layout_width="145dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="22dp"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="31dp"
         android:text="@string/salvar"
-        app:layout_constraintBottom_toTopOf="@+id/Lista"
+        app:layout_constraintEnd_toStartOf="@+id/Editar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DataId" />
 
     <Button
         android:id="@+id/Editar"
-        android:layout_width="141dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="109dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="23dp"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="44dp"
         android:text="@string/editar"
-        app:layout_constraintBottom_toTopOf="@+id/Lista"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Salvar"
-        app:layout_constraintTop_toBottomOf="@+id/NumeroId" />
+        app:layout_constraintTop_toBottomOf="@+id/DataId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
