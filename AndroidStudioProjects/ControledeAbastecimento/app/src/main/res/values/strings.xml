@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Controle de Abastecimento</string>
+    <string name="quilomentragem_atual">Quilomentragem Atual</string>
+    <string name="quantidade_abastecida">Quantidade Abastecida</string>
+    <string name="data_abastecida">Data Abastecida</string>
+    <string name="salvar">Salvar</string>
+    <string name="valor_abastecido">Valor Abastecido</string>
+    <string name="calcular">Calcular</string>
 </resources>
