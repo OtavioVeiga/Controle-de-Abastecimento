@@ -1,13 +1,13 @@
 package Banco_dados;
 
 import android.content.ContentValues;
-import android.database.sqlite.SQLiteOpenHelper;
+import android.database.sqlite.SQLiteDatabase;
 
 import br.unigran.controledeabastecimento.Controle;
 
 public class ControleDB {
     private DBHelper db;
-    private SQLiteOpenHelper conexao;
+    private SQLiteDatabase conexao;
 
         public ControleDB(DBHelper db){
             this.db = db;
@@ -18,6 +18,13 @@ public class ControleDB {
             ContentValues valores = new ContentValues();
             valores.put("km", controle.getKm());
             valores.put("quant", controle.getQuant());
-            valores.put("data", controle.getData());
+            valores.put("dia", controle.getDia());
+            valores.put("valor", controle.getValor());
+            conexao.insertOrThrow("listagem", null, valores);
+            conexao.close();
+        }
+
+        public void remover(int id){
+
         }
 }

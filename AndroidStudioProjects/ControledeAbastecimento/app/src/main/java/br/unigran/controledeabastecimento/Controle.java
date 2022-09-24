@@ -6,7 +6,7 @@ public class Controle {
 
     private Integer km;
     private Integer quant;
-    private Date data;
+    private String dia;
     private Integer valor;
     private Integer id;
 
@@ -26,12 +26,12 @@ public class Controle {
         this.quant = quant;
     }
 
-    public Date getData() {
-        return data;
+    public String getDia() {
+        return dia;
     }
 
-    public void setData(Date data) {
-        this.data = data;
+    public void setDia(Date dia) {
+        this.dia = String.valueOf(dia);
     }
 
     public Integer getValor() {
@@ -50,4 +50,14 @@ public class Controle {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        return "Controle{" +
+                "km=" + km +
+                ", quant=" + quant +
+                ", dia='" + dia + '\'' +
+                ", valor=" + valor +
+                ", id=" + id +
+                '}';
+    }
 }
