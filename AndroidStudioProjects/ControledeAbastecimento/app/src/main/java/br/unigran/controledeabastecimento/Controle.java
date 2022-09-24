@@ -6,5 +6,6 @@ public class Controle {
     private Integer quant;
     private String data;
     private Integer valor;
+    private Integer id;
 
 }

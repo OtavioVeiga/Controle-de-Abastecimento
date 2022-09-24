@@ -15,11 +15,17 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+        sqLiteDatabase.execSQL("create table Lista(" +
+                "id integer primary key autoincrement," +
+                "km varchar(150)," +
+                "quant varchar(15)," +
+                "data varchar(15)," +
+                "valor varchar(15))");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+
 
     }
 }
