@@ -14,7 +14,7 @@ public class Controle {
         return km;
     }
 
-    public void setKm(Integer km) {
+    public void setKm(String km) {
         this.km = km;
     }
 
@@ -22,15 +22,15 @@ public class Controle {
         return quant;
     }
 
-    public void setQuant(Integer quant) {
+    public void setQuant(String quant) {
         this.quant = quant;
     }
 
-    public String getDia() {
+    public String getDia(String string) {
         return dia;
     }
 
-    public void setDia(Date dia) {
+    public void setDia(String dia) {
         this.dia = String.valueOf(dia);
     }
 
@@ -38,7 +38,7 @@ public class Controle {
         return valor;
     }
 
-    public void setValor(Integer valor) {
+    public void setValor(String valor) {
         this.valor = valor;
     }
 

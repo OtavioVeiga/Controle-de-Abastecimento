@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         dados = new ArrayList();
         lista = findViewById(R.id.listagem);
 
+        dados = new ArrayList();
+        ArrayAdapter adapter = new ArrayAdapter(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, dados);
+        lista.setAdapter(adapter);
+        controleDB = new ControleDB(db);
+        controleDB.(dado);
+
 
     }
 
