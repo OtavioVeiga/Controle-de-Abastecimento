@@ -19,23 +19,26 @@ public class MainActivity extends AppCompatActivity {
     EditText valor;
     EditText dia;
     EditText km;
-    ArrayList<Controle> salvar;
+    EditText media;
+    ArrayList<Controle> dados;
     ListView lista;
     DBHelper db;
-    ControleDB
+    ControleDB controleDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        db = new DBHelper(this);
         km = findViewById(R.id.km);
         quant = findViewById(R.id.qunt);
         valor = findViewById(R.id.valor);
         dia = findViewById(R.id.data);
-        salvar = new ArrayList();
+        dados = new ArrayList();
         lista = findViewById(R.id.listagem);
-        ArrayAdapter adapter = new ArrayAdapter(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, salvar);
-        lista.setAdapter(adapter);
+
+
     }
 
 }
