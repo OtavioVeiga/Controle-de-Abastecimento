@@ -1,4 +1,4 @@
-package Banco_dados;
+package br.unigran.controledeabastecimento.Banco_dados;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
